@@ -1,0 +1,60 @@
+.commentContainer{
+  position: relative;
+}
+
+.commentItem {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.commentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.commentUserName {
+  font-weight: bold;
+  color: #333;
+}
+
+.commentDate {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.commentContent {
+  font-size: 0.925rem;
+  margin-bottom: 10px;
+}
+
+.commentActions{
+  display: flex;
+  gap: 5px;
+}
+
+.commentActions button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.commentActions button:hover {
+  text-decoration: underline;
+}
+
+.commentReply{
+  margin: 20px 0px 10px 40px;
+}
+
+.deleteIcon{
+  position: absolute;
+  top: 40%;
+  right: -16px;
+  padding: 10px;
+}

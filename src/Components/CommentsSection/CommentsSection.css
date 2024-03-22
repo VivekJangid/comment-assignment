@@ -1,0 +1,32 @@
+.comments-section {
+  margin-top: 20px;
+}
+
+.commentItem {
+  background: #f9f9f9;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.commentItem:first-child {
+  margin-top: 0;
+}
+
+.commentItem .commentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.commentItem .commentHeader .commentUserName {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.commentItem .commentHeader .commentDate {
+  font-size: 12
+}
