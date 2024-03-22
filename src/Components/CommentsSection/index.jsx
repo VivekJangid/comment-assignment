@@ -18,15 +18,19 @@ const CommentsSection = () => {
   return (
     <div className='container'>
       <CommentForm onSubmit={handleNewComment} />
-      <SortButton />
-      {comments?.map((comment) => (
-        <CommentItem
-          key={comment.id}
-          comment={comment}
-          onReplySubmit={handleNewReply}
-          showReply
-        />
-      ))}
+      {comments?.length > 0 && (
+        <>
+          <SortButton />
+          {comments?.map((comment) => (
+            <CommentItem
+              key={comment.id}
+              comment={comment}
+              onReplySubmit={handleNewReply}
+              showReply
+            />
+          ))}
+        </>
+      )}
     </div>
   );
 };
